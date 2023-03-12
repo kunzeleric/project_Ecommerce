@@ -1,0 +1,73 @@
+@use "../../sass/variables" as *;
+@use "../../sass/mixins" as *;
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10em;
+  gap: 5em;
+
+  &__instructions {
+    text-align: center;
+
+    &-main {
+      font-size: 2em;
+      padding-bottom: 1rem;
+      font-weight: 500;
+    }
+
+    &-aux {
+      font-size: 1.2em;
+      font-weight: 500;
+    }
+  }
+
+  &__area {
+    display: flex;
+    flex-direction: column;
+
+    &-name {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 2em;
+    }
+
+    &-password {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 4em;
+    }
+
+    label {
+      padding-bottom: 0.5em;
+    }
+
+    input {
+      @include input-bar;
+      text-indent: 0.5em;
+    }
+
+    &-button {
+      @include blue-generic-button;
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  .verificador{
+    height: 0;
+    font-size: 12px;
+    color: red;
+  }
+
+  .verificadorGeral{
+    height: 0;
+    font-size: 15px;
+    text-align: center;
+    color: red;
+  }
+}

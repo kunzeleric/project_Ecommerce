@@ -1,10 +1,9 @@
-import React from 'react'
-import './index.scss';
 import Logo from '../../assets/dnc-logo.png';
+import './index.scss';
 
 const Header = () => {
   return (
-    <header>
+    <header className="header">
         <img src={Logo} alt="Logo DNC" />
     </header>
   )

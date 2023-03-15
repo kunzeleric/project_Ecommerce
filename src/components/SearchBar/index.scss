@@ -1,2 +1,23 @@
 @use "../../sass/variables" as *;
 @use "../../sass/mixins" as *;
+
+.searchbar{
+    position: relative;
+
+    &__icon{
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+    }
+
+    input{
+        @include search-bar;
+        padding-left: 3em;
+    }
+
+    input::placeholder{
+        font-size: 1.2em;
+        letter-spacing: 0.5px;
+    }
+}

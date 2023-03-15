@@ -1,8 +1,13 @@
-import React from 'react'
+import Search from '../../assets/search-logo.png';
+import './index.scss';
+
 
 const SearchBar = () => {
   return (
-    <div>SearchBar</div>
+    <div className="searchbar">
+      <img className="searchbar__icon" src={Search} alt="Search Icon" />
+      <input type="text" placeholder='O que você está procurando?' />
+    </div>
   )
 }
 

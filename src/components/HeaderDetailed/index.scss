@@ -1,2 +1,45 @@
 @use "../../sass/variables" as *;
 @use "../../sass/mixins" as *;
+
+.headerdetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $black;
+    box-shadow: 2px 4px 4px rgba(173, 173, 173, 0.25);
+
+    &__top{
+        display: flex;
+        justify-content: center;
+        gap: 7em;
+        align-items: center;
+        margin-top: 2em;
+    }
+
+    &__bottom{
+    
+        ul{
+            display: flex;
+            justify-content: center;
+            gap: 5em;
+            padding: 1.5em 0.5em;
+            font-size: 1.5em;
+            color: #fff;
+            font-weight: 500;
+
+            li{
+                cursor: pointer;
+            }
+
+            li:hover{
+                text-decoration: underline;
+                color: $blue;
+                transition: 1s ease-in;
+            }
+        }
+
+        li:first-child{
+            font-weight: 900;
+        }
+    }
+}

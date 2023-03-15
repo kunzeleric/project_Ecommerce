@@ -1,0 +1,32 @@
+@use "../../sass/variables" as *;
+@use "../../sass/mixins" as *;
+
+.carrosel {
+  border-top: 1px solid black;
+  overflow: hidden;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+  background-color: $black;
+
+  img {
+    height: 25vh;
+  }
+}
+
+.container-banner {
+  position: relative;
+  animation: slide 17s infinite ease;
+  display: flex;
+  gap: 5px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  95% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

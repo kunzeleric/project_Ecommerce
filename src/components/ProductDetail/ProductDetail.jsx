@@ -1,7 +1,12 @@
 import './index.scss';
 import cartButton from '../../assets/cart-button.png';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import ModalProduct from '../ModalProduct/ModalProduct';
 
 const ProductDetail = ({data}) => {
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
   return (
     <div className="product-detail">
       <div className="left">
@@ -42,10 +47,15 @@ const ProductDetail = ({data}) => {
             ))}
           </div>
         </div>
-        <button className="right__button">
-          <img src={cartButton} alt="Cart" />
-          Adicionar ao carrinho
+        <button onClick={() => setIsModalVisible(true)}
+        className="right__button">
+        <img src={cartButton} alt="Cart" />
+        Adicionar ao carrinho
         </button>
+        {
+          isModalVisible ? <ModalProduct onClose={() => setIsModalVisible(false)} data={data}/>
+          : null
+        }
       </div>
     </div>
   )

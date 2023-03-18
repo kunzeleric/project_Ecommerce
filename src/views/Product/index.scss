@@ -1,2 +1,9 @@
 @use "../../sass/variables" as *;
 @use "../../sass/mixins" as *;
+
+.product{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

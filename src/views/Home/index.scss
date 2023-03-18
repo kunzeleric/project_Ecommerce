@@ -5,18 +5,18 @@
     background-color: $black;
 
   &__product {
-    height: 100%;
     padding: 5vh 0;
     display: grid;
     justify-content: center;
     grid-template-columns: 20vw 20vw 20vw;
     grid-template-rows: none;
     gap: 5em;
+
   }
 }
 
-@media (max-width: 1200px) {
-    .home__product{
-        grid-template-columns: 17vw 17vw;
-    }
+@media (max-width: 900px) {
+  .home__product{
+      grid-template-columns: 25vw 25vw;
+  }
 }

@@ -55,6 +55,7 @@
 
     &-button {
       @include blue-generic-button;
+      align-self: center;
 
       a {
         color: #fff;

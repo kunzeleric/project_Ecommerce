@@ -33,3 +33,37 @@
     }
 
 }
+
+@media (max-width: 1200px) {
+    .product-card{
+        width: 22vw;
+
+        &__title{
+            font-size: 1.2vw;
+            text-align: center;
+            height: 2vh;
+        }
+
+        &__button{
+            font-size: 1.3vw;
+        }
+    
+    }
+}
+
+@media (max-width: 900px) {
+    .product-card{
+        width: 25vw;
+
+        &__title{
+            font-size: 1.4vw;
+            text-align: center;
+            height: 2vh;
+        }
+
+        &__button{
+            font-size: 1.5vw;
+        }
+    
+    }
+}

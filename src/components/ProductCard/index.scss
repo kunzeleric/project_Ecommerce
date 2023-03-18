@@ -26,6 +26,10 @@
     &__button{
         @include card-product-button;
         margin-bottom: 1em;
+
+        a{
+            color: #fff;
+        }
     }
 
 }

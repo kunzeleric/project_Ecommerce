@@ -1,2 +1,80 @@
 @use "../../sass/variables" as *;
 @use "../../sass/mixins" as *;
+
+
+.product-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 10vw;
+        &__top{
+            &-title{
+                font-size: 1vw;
+                padding-top: 2vw;
+            }
+        }
+
+        &__bottom{
+            padding-top: 3vw;
+
+            &-title{
+                padding-bottom: 1vw;
+            }
+        
+            &-description{
+                padding-bottom: 1vw;
+                border-bottom: 2px solid $blue;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .right{
+        display: flex;
+        flex-direction: column;
+        height: 70%;
+
+        &__title{
+            text-align: center;
+            font-weight: normal;
+            border-bottom: 3px solid $blue;
+            padding-bottom: 0.5vw;
+        }
+
+        &__detail{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 40%;
+            padding-top: 2vw;
+
+            &-price{
+                font-size: 1.5vw;
+            }
+
+            &-color{
+                font-size: 0.8vw;
+            }
+
+            &-colorblock{
+                display: flex;
+                gap: 0.5em;
+            }
+        }
+        &__button{
+            @include blue-generic-button;
+            margin-top: 7vw;
+            align-self: center;
+
+            img{
+                padding-right: 0.5vw;
+            }
+        }
+    }
+}

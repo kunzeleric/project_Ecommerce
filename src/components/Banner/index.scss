@@ -5,14 +5,17 @@
   overflow: hidden;
   box-shadow: 0 0 15px 10px #0d70f18f;
   background-color: $grey;
+
+  .container-banner {
+    position: relative;
+    animation: slide 15s infinite ease-out;
+    display: flex;
+    gap: 2px;
+    height: 32vh;
+  }
 }
 
-.container-banner {
-  position: relative;
-  animation: slide 15s infinite ease;
-  display: flex;
-  gap: 2px;
-}
+
 
 @keyframes slide {
   0% {

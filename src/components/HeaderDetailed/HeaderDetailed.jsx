@@ -2,6 +2,7 @@ import Logo from '../../assets/dnc-logo.png';
 import Cart from '../../assets/cart-logo.png';
 import SearchBar from '../SearchBar/SearchBar';
 import './index.scss';
+import { Link } from 'react-router-dom';
 
 
 const HeaderDetailed = () => {
@@ -9,7 +10,7 @@ const HeaderDetailed = () => {
     <>
     <header className="headerdetail">
       <div className="headerdetail__top">
-        <img className="headerdetail__top-logo" src={Logo} alt="Logo DNC" />
+        <Link to='/home'><img className="headerdetail__top-logo" src={Logo} alt="Logo DNC" /></Link>
         <SearchBar/>
         <img className="headerdetail__top-cart" src={Cart} alt="Cart Shopping" />
       </div>

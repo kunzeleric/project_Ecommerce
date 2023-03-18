@@ -28,7 +28,8 @@ export const PRODUCTS_MOCK = [
         imgPath: "product-4.png",
         imgPathDetail: "../../../public/product-4.png",
         title: "Jogo God Of War Playstation",
-        price: "R$ 100,00"
+        price: "R$ 100,00",
+        colors: ["blue"],
     },
     {
         id: 5,
@@ -36,6 +37,7 @@ export const PRODUCTS_MOCK = [
         imgPathDetail: "../../../public/product-5.png",
         title: "Jogo Uncharted: The Nathan Drake Collection",
         price: "R$ 79,90",
+        colors: ["blue"],
     },
     {
         id: 6,
@@ -43,5 +45,6 @@ export const PRODUCTS_MOCK = [
         imgPathDetail: "../../../public/product-6.png",
         title: "Jogo Gran Turismo Playstation",
         price: "R$ 99,50",
+        colors: ["blue"],
     },
 ];

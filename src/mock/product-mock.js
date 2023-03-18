@@ -27,7 +27,7 @@ export const PRODUCTS_MOCK = [
         id: 4,
         imgPath: "product-4.png",
         imgPathDetail: "../../../public/product-4.png",
-        title: "Cropped manga preta |  by DNC",
+        title: "Jogo God Of War Playstation",
         price: "R$ 100,00"
     },
     {
@@ -41,7 +41,7 @@ export const PRODUCTS_MOCK = [
         id: 6,
         imgPath: "product-6.png",
         imgPathDetail: "../../../public/product-6.png",
-        title: "Jogo Gran Turismo",
+        title: "Jogo Gran Turismo Playstation",
         price: "R$ 99,50",
     },
 ];

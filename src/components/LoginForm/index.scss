@@ -13,13 +13,13 @@
     text-align: center;
 
     &-main {
-      font-size: 2em;
+      font-size: 1.5vw;
       padding-bottom: 1rem;
       font-weight: 500;
     }
 
     &-aux {
-      font-size: 1.2em;
+      font-size: 1vw;
       font-weight: 500;
     }
   }
@@ -46,7 +46,11 @@
 
     input {
       @include input-bar;
-      text-indent: 0.5em;
+      text-indent: 0.5vw;
+    }
+
+    input::placeholder{
+      font-size: 0.6vw;
     }
 
     &-button {
@@ -60,14 +64,16 @@
 
   .verificador{
     height: 0;
-    font-size: 12px;
+    font-size: 0.6vw;
     color: red;
   }
 
   .verificadorGeral{
     height: 0;
-    font-size: 15px;
+    font-size: 0.7vw;
     text-align: center;
     color: red;
+
+
   }
 }

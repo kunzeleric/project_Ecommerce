@@ -1,14 +1,22 @@
-import Banner from '../../components/Banner/Banner';
-import HeaderDetailed from '../../components/HeaderDetailed/HeaderDetailed';
-import './index.scss';
+import Banner from "../../components/Banner/Banner";
+import Footer from "../../components/Footer/Footer";
+import HeaderDetailed from "../../components/HeaderDetailed/HeaderDetailed";
+import ProductCard from "../../components/ProductCard/ProductCard";
+import "./index.scss";
 
-const Home = () => {
+const Home = ({ data }) => {
   return (
-    <>
-   <HeaderDetailed/>
-   <Banner/>
-   </>
-  )
-}
+    <div className="home">
+      <HeaderDetailed />
+      <Banner />
+      <div className="home__product">
+        {data.map((product) => (
+          <ProductCard data={product} key={product.id} />
+        ))}
+      </div>
+      <Footer/>
+    </div>
+  );
+};
 
-export default Home
+export default Home;

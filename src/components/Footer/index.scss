@@ -1,0 +1,23 @@
+@use "../../sass/variables" as *;
+@use "../../sass/mixins" as *;
+
+footer{
+    background-color: $blue;
+    display: flex;
+    align-items: center;
+    padding: 1.5vw 4vw;
+
+    img{
+        align-self: center;
+    }
+
+    p{
+        font-size: 1vw;
+        color: #fff;
+        padding-left: 3vw;
+        padding-top: 1em;
+        text-align: left;
+        width: 80%;
+    }
+
+}

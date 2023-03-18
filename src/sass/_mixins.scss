@@ -15,7 +15,7 @@
   color: #fff;
   border: 0;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 1vw;
   font-weight: 700;
 }
 
@@ -24,19 +24,25 @@
   height: 6vh;
   background: $button-grey;
   border-radius: $global-radius;
+  cursor: pointer;
 }
 
 @mixin card-product {
-  width: 15vw;
-  height: auto;
-  border: 1px solid #b7b7b7;
+  border: 2px solid #b7b7b7;
+  border-radius: $global-radius;
+  font-size: 1vw;
 }
 
 @mixin card-product-button {
   width: 8vw;
-  height: 5vh;
+  height: 3vh;
   background: $blue;
   border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1vw;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 @mixin search-bar {

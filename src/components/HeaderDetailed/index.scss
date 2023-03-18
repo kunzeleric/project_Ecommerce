@@ -6,7 +6,6 @@
     flex-direction: column;
     justify-content: center;
     background-color: $black;
-    box-shadow: 2px 4px 4px rgba(173, 173, 173, 0.25);
 
     &__top{
         display: flex;
@@ -14,6 +13,19 @@
         gap: 7em;
         align-items: center;
         margin-top: 2em;
+
+        &-logo{
+            width: 8vw;
+        }
+
+        &-cart{
+            cursor: pointer;
+            transition: transform .3s;
+        }
+
+        &-cart:hover{
+            transform: scale(1.2);
+        }
     }
 
     &__bottom{
@@ -23,7 +35,7 @@
             justify-content: center;
             gap: 5em;
             padding: 1.5em 0.5em;
-            font-size: 1.5em;
+            font-size: 1.1vw;
             color: #fff;
             font-weight: 500;
 

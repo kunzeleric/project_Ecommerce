@@ -6,8 +6,8 @@ import banner4 from "../../assets/banner4.jpeg";
 
 const Banner = () => {
   return (
-    <div className="carrosel"  id='next'>
-        <div className="container-banner" id='img'>
+    <div className="carrosel">
+        <div className="container-banner">
             <img src={banner1} alt='banner 1' />
             <img src={banner2} alt='banner 2' />
             <img src={banner3} alt='banner 3' />

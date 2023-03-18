@@ -9,15 +9,18 @@
         top: 50%;
         left: 10px;
         transform: translateY(-50%);
+        width: 0.99vw;
+        height: auto;
     }
 
     input{
         @include search-bar;
-        padding-left: 3em;
+        padding-left: 2em;
+        font-size: 1vw;
     }
 
     input::placeholder{
-        font-size: 1.2em;
+        font-size: 0.85vw;
         letter-spacing: 0.5px;
     }
 }

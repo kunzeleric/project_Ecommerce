@@ -2,21 +2,16 @@
 @use "../../sass/mixins" as *;
 
 .carrosel {
-  border-top: 1px solid black;
   overflow: hidden;
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
-  background-color: $black;
-
-  img {
-    height: 25vh;
-  }
+  box-shadow: 0 0 15px 10px #0d70f18f;
+  background-color: $grey;
 }
 
 .container-banner {
   position: relative;
-  animation: slide 17s infinite ease;
+  animation: slide 15s infinite ease;
   display: flex;
-  gap: 5px;
+  gap: 2px;
 }
 
 @keyframes slide {
@@ -28,5 +23,19 @@
   }
   100% {
     transform: translateX(0%);
+  }
+}
+
+@media (min-width: 2000px){
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    95% {
+      transform: translateX(-90%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
   }
 }

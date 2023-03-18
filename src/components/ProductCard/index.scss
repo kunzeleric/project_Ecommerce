@@ -1,0 +1,31 @@
+@use "../../sass/variables" as *;
+@use "../../sass/mixins" as *;
+
+.product-card{
+    @include card-product;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 17vw;
+    height: auto;
+    gap: 2em;
+    background-color: #fff;
+
+    &__img{
+        width: 100%;
+        border-top-left-radius: $global-radius;
+        border-top-right-radius: $global-radius;
+    }
+
+    &__title{
+        font-size: 0.8vw;
+        text-align: center;
+        height: 2vh;
+    }
+
+    &__button{
+        @include card-product-button;
+        margin-bottom: 1em;
+    }
+
+}

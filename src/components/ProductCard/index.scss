@@ -6,15 +6,14 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 17vw;
-    height: auto;
     gap: 2em;
     background-color: #fff;
 
     &__img{
-        width: 100%;
         border-top-left-radius: $global-radius;
         border-top-right-radius: $global-radius;
+        height: 270px;
+        width: 280px;
     }
 
     &__title{
@@ -63,7 +62,45 @@
 
         &__button{
             font-size: 1.5vw;
+            width: 12vw;
         }
     
     }
 }
+
+@media (max-width: 700px) {
+    .product-card{
+        width: 32vw;
+
+        &__title{
+            font-size: 1.6vw;
+            text-align: center;
+            height: 2vh;
+        }
+
+        &__button{
+            font-size: 1.7vw;
+            width: 10vw;
+        }
+    
+    }
+}
+
+@media (max-width: 500px) {
+    .product-card{
+        width: 35vw;
+
+        &__title{
+            font-size: 1.8vw;
+            text-align: center;
+            height: 2vh;
+        }
+
+        &__button{
+            font-size: 2vw;
+            width: 10vw;
+        }
+    
+    }
+}
+

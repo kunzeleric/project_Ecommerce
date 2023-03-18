@@ -16,7 +16,7 @@ const ProductDetail = ({data}) => {
         </div>
         <div className="left__bottom">
           <h2 className='left__bottom-title'>Descrição</h2>
-          <p className='left__bottom-description'>Lorem ipsum dolor sit amet consectur</p>
+          <p className='left__bottom-description'>{data.description}</p>
         </div>
       </div>
       <div className="right">
@@ -40,7 +40,7 @@ const ProductDetail = ({data}) => {
             {data.colors.map((color, index) => (
               <span 
               style={{
-              padding: "0.8vw", backgroundColor: color, 
+              padding: "1vw", backgroundColor: color, 
               borderRadius:"8px",
               border: "1px solid black"}} key={index}>
               </span>

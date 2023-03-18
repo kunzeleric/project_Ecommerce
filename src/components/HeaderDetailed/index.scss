@@ -1,57 +1,119 @@
 @use "../../sass/variables" as *;
 @use "../../sass/mixins" as *;
 
-.headerdetail{
+.headerdetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $black;
+
+  &__top {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    background-color: $black;
+    gap: 3vw;
+    align-items: center;
+    margin-top: 2em;
 
-    &__top{
-        display: flex;
-        justify-content: center;
-        gap: 3vw;
-        align-items: center;
-        margin-top: 2em;
-
-        &-logo{
-            width: 8vw;
-        }
-
-        &-cart{
-            cursor: pointer;
-            transition: transform .3s;
-        }
-
-        &-cart:hover{
-            transform: scale(1.2);
-        }
+    &-logo {
+      width: 8vw;
     }
 
-    &__bottom{
-    
-        ul{
-            display: flex;
-            justify-content: center;
-            gap: 5em;
-            padding: 1.5vw 0.5em;
-            font-size: 1.1vw;
-            color: #fff;
-            font-weight: 500;
+    &-cart {
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
 
-            li{
-                cursor: pointer;
-            }
+    &-cart:hover {
+      transform: scale(1.2);
+    }
+  }
 
-            li:hover{
-                text-decoration: underline;
-                color: $blue;
-                transition: 1s ease-in;
-            }
+  &__bottom {
+    ul {
+      display: flex;
+      justify-content: center;
+      gap: 5em;
+      padding: 1.5vw 0.5em;
+      font-size: 1.1vw;
+      color: #fff;
+      font-weight: 500;
+
+      li {
+        cursor: pointer;
+      }
+
+      li:hover {
+        text-decoration: underline;
+        color: $blue;
+        transition: 1s ease-in;
+      }
+    }
+
+    li:first-child {
+      font-weight: 900;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .headerdetail {
+    &__top {
+      &-logo {
+        width: 12vw;
+      }
+
+      &-cart {
+        width: 10vw;
+      }
+    }
+
+    &__bottom {
+      ul {
+        gap: 4vw;
+        font-size: 1.5vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+    .headerdetail {
+      &__top {
+  
+        &-logo {
+          width: 14vw;
         }
-
-        li:first-child{
-            font-weight: 900;
+  
+        &-cart {
+          width: 8vw;
         }
+      }
+  
+      &__bottom {
+        margin-top: 1vw;
+        ul {
+          gap: 4vw;
+          font-size: 1.7vw;
+        }
+      }
+    }
+  }
+  
+@media (max-width: 700px) {
+    .headerdetail {
+
+      &__top {
+        &-cart {
+          width: 11vw;
+        }
+      }
+  
+      &__bottom {
+        margin-top: 1vw;
+        ul {
+          gap: 2vw;
+          font-size: 2.4vw;
+        }
+      }
     }
 }

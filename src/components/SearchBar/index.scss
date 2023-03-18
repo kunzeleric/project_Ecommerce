@@ -24,3 +24,54 @@
         letter-spacing: 0.5px;
     }
 }
+
+@media (max-width: 1200px){
+    .searchbar{
+        &__icon{
+            width: 2vw;
+        }
+
+    input{
+        padding-left: 4vw;
+        font-size: 1.5vw;
+    }
+
+    input::placeholder{
+        font-size: 1vw;
+    }
+    }
+}
+
+@media (max-width: 900px){
+    .searchbar{
+        &__icon{
+            width: 3vw;
+        }
+
+    input{
+        padding-left: 5vw;
+        font-size: 1.5vw;
+    }
+
+    input::placeholder{
+        font-size: 1.5vw;
+    }
+    }
+}
+
+@media (max-width: 700px){
+    .searchbar{
+        &__icon{
+            width: 3.5vw;
+        }
+
+    input{
+        padding-left: 6vw;
+        font-size: 2vw;
+    }
+
+    input::placeholder{
+        font-size: 2vw;
+    }
+    }
+}

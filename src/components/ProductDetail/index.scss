@@ -1,87 +1,230 @@
 @use "../../sass/variables" as *;
 @use "../../sass/mixins" as *;
 
+.product-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
 
-.product-detail{
+  .left {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 60vh;
+    margin-right: 10vw;
 
-    .left{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-right: 10vw;
-        &__top{
-            &-title{
-                font-size: 1vw;
-                padding-top: 2vw;
-            }
-        }
+    &__top {
 
-        &__bottom{
-            padding-top: 3vw;
-
-            &-title{
-                padding-bottom: 1vw;
-            }
-        
-            &-description{
-                padding-bottom: 1vw;
-                border-bottom: 2px solid $blue;
-                font-weight: 500;
-            }
-        }
+      &-title {
+        font-size: 1.2vw;
+        padding-top: 2vw;
+      }
     }
 
-    .right{
-        display: flex;
-        flex-direction: column;
-        height: 70%;
+    &__bottom {
+      padding-top: 3vw;
 
-        &__title{
-            text-align: center;
-            font-weight: normal;
-            border-bottom: 3px solid $blue;
-            padding-bottom: 0.5vw;
-        }
+      &-title {
+        padding-bottom: 1vw;
+      }
 
-        &__detail{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            height: 40%;
-            padding-top: 2vw;
-
-            &-price{
-                font-size: 1.5vw;
-            }
-
-            &-color{
-                font-size: 0.8vw;
-            }
-
-            &-colorblock{
-                display: flex;
-                gap: 0.5em;
-            }
-        }
-        &__button{
-            @include blue-generic-button;
-            display: block;
-            margin-top: 7vw;
-            align-self: center;
-
-            img{
-                padding-right: 0.5vw;
-            }
-        }
+      &-description {
+        padding-bottom: 1vw;
+        border-bottom: 2px solid $blue;
+        font-weight: 500;
+      }
     }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+
+    &__title {
+      text-align: center;
+      font-weight: normal;
+      border-bottom: 3px solid $blue;
+      padding-bottom: 0.5vw;
+    }
+
+    &__detail {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 40%;
+      padding-top: 2vw;
+
+      &-price {
+        font-size: 2vw;
+        padding-bottom: 1vw;
+      }
+
+      &-color {
+        font-size: 1.2vw;
+        padding-bottom: 1vw;
+      }
+
+      &-colorblock {
+        display: flex;
+        gap: 0.5em;
+
+        span{
+          cursor: pointer;
+        }
+      }
+    }
+    &__button {
+      @include blue-generic-button;
+      display: block;
+      margin-top: 7vw;
+      align-self: center;
+
+      img {
+        padding-right: 0.5vw;
+      }
+    }
+  }
 }
 
-@media (max-width: 700px){
-    .product-detail{
-        flex-direction: column;
+@media (max-width: 1200px) {
+  .product-detail {
+    .left {
+    margin-left: 1vw;
+
+    &__top-logo{
+        width: 30vw;
     }
+
+      &__top {
+        &-title {
+          font-size: 1.5vw;
+        }
+      }
+    }
+
+
+  .right {
+    margin-right: 3vw;
+
+    &__title{
+        font-size: 2.5vw;
+      }
+
+    &__detail {
+      &-price {
+        font-size: 2.5vw;
+      }
+
+      &-color {
+        font-size: 1.6vw;
+      }
+
+      &-colorblock {
+        span{
+            padding: 1.5vw !important;
+        }
+      }
+    }
+    
+    &__button{
+        width: 30vw;
+        font-size: 1.5vw;
+      }
+  }
+}
+}
+
+@media (max-width: 900px) {
+  .product-detail {
+    .left {
+    margin-left: 2vw;
+
+      &__top {
+        &-title {
+          font-size: 2vw;
+        }
+      }
+    }
+
+
+  .right {
+    margin-right: 2vw;
+
+    &__title{
+        font-size: 3vw;
+      }
+
+    &__detail {
+      &-price {
+        font-size: 2.8vw;
+      }
+
+      &-color {
+        font-size: 1.8vw;
+      }
+
+      &-colorblock {
+        span{
+            padding: 1.7vw !important;
+        }
+      }
+    }
+    
+    &__button{
+        width: 35vw;
+        font-size: 1.5vw;
+      }
+  }
+}
+}
+
+@media (max-width: 700px) {
+  .product-detail {
+    flex-direction: column;
+    gap: 3vw;
+    
+    .left{
+        margin: 0;
+        text-align: center;
+
+        &__top-logo{
+            width: 30vw;
+        }
+
+        &-title {
+            font-size: 1.3vw;
+        }
+        
+    }
+
+    .right {
+        margin: 0;
+
+      &__title{
+        font-size: 4vw;
+      }
+
+      &__detail {
+        &-price {
+          font-size: 3.5vw;
+        }
+
+        &-color {
+          font-size: 2.5vw;
+        }
+
+        &-colorblock {
+            span{
+                padding: 2.5vw !important;
+            }
+          }
+      }
+
+      &__button{
+        width: 40vw;
+        font-size: 2vw;
+      }
+    }
+  }
 }

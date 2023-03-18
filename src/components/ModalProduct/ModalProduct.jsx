@@ -1,6 +1,12 @@
 import "./index.scss";
+import ModalPayment from "../ModalPayment/ModalPayment";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const ModalProduct = ({ onClose = () => {}, data }) => {
+
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
   return (
     <div className="modal">
       <div className="container">
@@ -46,9 +52,13 @@ const ModalProduct = ({ onClose = () => {}, data }) => {
               </div>
             </div>
             <div className="container__product-buttons">
-              <button className="continuar">Continuar Comprando</button>
-              <button className="finalizar">Finalizar Compra</button>
+              <button className="continuar"><Link to='/home'>Continuar Comprando</Link></button>
+              <button onClick={() => setIsModalVisible(true)} className="finalizar">Finalizar Compra</button>
             </div>
+            {
+          isModalVisible ? <ModalPayment onClose={() => setIsModalVisible(false)} data={data}/>
+          : null
+        }
           </div>
         </div>
       </div>

@@ -14,7 +14,6 @@
     margin-right: 10vw;
 
     &__top {
-
       &-title {
         font-size: 1.2vw;
         padding-top: 2vw;
@@ -69,7 +68,7 @@
         display: flex;
         gap: 0.5em;
 
-        span{
+        span {
           cursor: pointer;
         }
       }
@@ -90,11 +89,11 @@
 @media (max-width: 1200px) {
   .product-detail {
     .left {
-    margin-left: 1vw;
+      margin-left: 1vw;
 
-    &__top-logo{
+      &__top-logo {
         width: 30vw;
-    }
+      }
 
       &__top {
         &-title {
@@ -103,42 +102,41 @@
       }
     }
 
+    .right {
+      margin-right: 3vw;
 
-  .right {
-    margin-right: 3vw;
-
-    &__title{
+      &__title {
         font-size: 2.5vw;
       }
 
-    &__detail {
-      &-price {
-        font-size: 2.5vw;
-      }
+      &__detail {
+        &-price {
+          font-size: 2.5vw;
+        }
 
-      &-color {
-        font-size: 1.6vw;
-      }
+        &-color {
+          font-size: 1.6vw;
+        }
 
-      &-colorblock {
-        span{
+        &-colorblock {
+          span {
             padding: 1.5vw !important;
+          }
         }
       }
-    }
-    
-    &__button{
+
+      &__button {
         width: 30vw;
         font-size: 1.5vw;
       }
+    }
   }
-}
 }
 
 @media (max-width: 900px) {
   .product-detail {
     .left {
-    margin-left: 2vw;
+      margin-left: 2vw;
 
       &__top {
         &-title {
@@ -147,61 +145,59 @@
       }
     }
 
+    .right {
+      margin-right: 2vw;
 
-  .right {
-    margin-right: 2vw;
-
-    &__title{
+      &__title {
         font-size: 3vw;
       }
 
-    &__detail {
-      &-price {
-        font-size: 2.8vw;
-      }
+      &__detail {
+        &-price {
+          font-size: 2.8vw;
+        }
 
-      &-color {
-        font-size: 1.8vw;
-      }
+        &-color {
+          font-size: 1.8vw;
+        }
 
-      &-colorblock {
-        span{
+        &-colorblock {
+          span {
             padding: 1.7vw !important;
+          }
         }
       }
-    }
-    
-    &__button{
+
+      &__button {
         width: 35vw;
         font-size: 1.5vw;
       }
+    }
   }
-}
 }
 
 @media (max-width: 700px) {
   .product-detail {
     flex-direction: column;
     gap: 3vw;
-    
-    .left{
-        margin: 0;
-        text-align: center;
 
-        &__top-logo{
-            width: 30vw;
-        }
+    .left {
+      margin: 0;
+      text-align: center;
 
-        &-title {
-            font-size: 1.3vw;
-        }
-        
+      &__top-logo {
+        width: 30vw;
+      }
+
+      &-title {
+        font-size: 1.3vw;
+      }
     }
 
     .right {
-        margin: 0;
+      margin: 0;
 
-      &__title{
+      &__title {
         font-size: 4vw;
       }
 
@@ -215,15 +211,78 @@
         }
 
         &-colorblock {
-            span{
-                padding: 2.5vw !important;
-            }
+          span {
+            padding: 2.5vw !important;
           }
+        }
       }
 
-      &__button{
+      &__button {
         width: 40vw;
         font-size: 2vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .product-detail {
+    flex-direction: column;
+    gap: 3vw;
+
+    .left {
+      margin: 0;
+      text-align: center;
+
+      &__top {
+        &-logo {
+          width: 40vw;
+        }
+
+        &-title {
+          font-size: 3vw;
+        }
+      }
+
+      &__bottom {
+        &-title {
+          font-size: 5vw;
+        }
+        &-description{
+          font-size: 3vw;
+          border: 0;
+        }
+      }
+    }
+
+    .right {
+      margin: 0;
+
+      &__title {
+        font-size: 5vw;
+      }
+
+      &__detail {
+        &-price {
+          font-size: 4vw;
+          padding-bottom: 1vw;
+        }
+
+        &-color {
+          font-size: 2.5vw;
+          padding-bottom: 1vw;
+        }
+
+        &-colorblock {
+          span {
+            padding: 2.5vw !important;
+          }
+        }
+      }
+
+      &__button {
+        width: 55vw;
+        font-size: 3vw;
       }
     }
   }

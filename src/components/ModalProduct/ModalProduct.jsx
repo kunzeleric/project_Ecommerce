@@ -13,7 +13,7 @@ const ModalProduct = ({ onClose = () => {}, data }) => {
         <button onClick={onClose} className="close"></button>
         <div className="container__main">
           <div className="container__main-left">
-            <div className="product-card">
+            <div className="product-card-info">
               <img src={data.imgPathDetail} alt={data.title} />
             </div>
             <p>{data.description}</p>

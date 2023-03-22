@@ -68,9 +68,10 @@
     }
 
     &__bottom {
+      margin: 2vw 0;
       ul {
         gap: 4vw;
-        font-size: 1.5vw;
+        font-size: 2vw;
       }
     }
   }
@@ -85,15 +86,15 @@
         }
   
         &-cart {
-          width: 8vw;
+          width: 10vw;
         }
       }
   
       &__bottom {
-        margin-top: 1vw;
+        margin: 2vw 0;
         ul {
           gap: 4vw;
-          font-size: 1.7vw;
+          font-size: 2vw;
         }
       }
     }
@@ -109,11 +110,59 @@
       }
   
       &__bottom {
-        margin-top: 1vw;
+        margin: 2vw 0;
         ul {
           gap: 2vw;
           font-size: 2.4vw;
         }
       }
     }
+}
+
+@media (max-width: 450px) {
+  .headerdetail {
+
+    &__top {
+      &-cart {
+        width: 12vw;
+      }
+    }
+
+    &__bottom {
+      margin: 3vw 0;
+
+      ul {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: auto auto auto;
+        column-gap: 10vw;
+        row-gap: 3vw;
+        font-size: 3.2vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .headerdetail {
+
+    &__top {
+
+      &-logo{
+        width: 16vw;
+      }
+      &-cart {
+        width: 14vw;
+      }
+    }
+
+    &__bottom {
+      margin: 3vw 0;
+
+      
+      ul {
+        font-size: 3.8vw;
+      }
+    }
+  }
 }

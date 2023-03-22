@@ -12,14 +12,13 @@
     &__img{
         border-top-left-radius: $global-radius;
         border-top-right-radius: $global-radius;
-        height: 270px;
-        width: 280px;
+        height: 70%;
+        width: 80%;
     }
 
     &__title{
         font-size: 0.8vw;
         text-align: center;
-        height: 2vh;
     }
 
     &__button{
@@ -35,11 +34,10 @@
 
 @media (max-width: 1200px) {
     .product-card{
-        width: 22vw;
+        width: 24vw;
 
         &__title{
-            font-size: 1.2vw;
-            text-align: center;
+            font-size: 1.4vw;
             height: 2vh;
         }
 
@@ -52,10 +50,10 @@
 
 @media (max-width: 900px) {
     .product-card{
-        width: 25vw;
+        width: 32vw;
 
         &__title{
-            font-size: 1.4vw;
+            font-size: 1.6vw;
             text-align: center;
             height: 2vh;
         }
@@ -70,37 +68,53 @@
 
 @media (max-width: 700px) {
     .product-card{
-        width: 32vw;
+        width: 37vw;
 
         &__title{
-            font-size: 1.6vw;
-            text-align: center;
-            height: 2vh;
-        }
-
-        &__button{
-            font-size: 1.7vw;
-            width: 10vw;
-        }
-    
-    }
-}
-
-@media (max-width: 500px) {
-    .product-card{
-        width: 35vw;
-
-        &__title{
-            font-size: 1.8vw;
-            text-align: center;
-            height: 2vh;
-        }
-
-        &__button{
             font-size: 2vw;
-            width: 10vw;
+            height: 2.5vh;
+        }
+
+        &__button{
+            font-size: 2.2vw;
+            width: 16vw;
+            height: 4vh;
         }
     
     }
 }
 
+@media (max-width: 450px) {
+    .product-card{
+        width: 60vw;
+
+        &__title{
+            font-size: 3.4vw;
+
+            height: 3vh;
+        }
+
+        &__button{
+            font-size: 3.7vw;
+            width: 22vw;
+        }
+    
+    }
+}
+
+@media (max-width: 400px) {
+    .product-card{
+        width: 63vw;
+
+        &__title{
+            font-size: 3.5vw;
+            height: 3.2vh;
+        }
+
+        &__button{
+            font-size: 4vw;
+            width: 24vw;
+        }
+    
+    }
+}

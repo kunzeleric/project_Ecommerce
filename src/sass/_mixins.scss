@@ -33,7 +33,7 @@
 
 @mixin purchase-cart-button {
   width: 28vw;
-  height: 6vh;
+  height: 7vh;
   background: $button-grey;
   border-radius: $global-radius;
   cursor: pointer;
@@ -46,8 +46,8 @@
 }
 
 @mixin card-product-button {
-  width: 8vw;
-  height: 3vh;
+  width: 9vw;
+  height: 4vh;
   background: $blue;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 5px;

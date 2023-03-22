@@ -13,13 +13,13 @@
     text-align: center;
 
     &-main {
-      font-size: 1.5vw;
+      font-size: 2vw;
       padding-bottom: 1rem;
       font-weight: 500;
     }
 
     &-aux {
-      font-size: 1vw;
+      font-size: 1.5vw;
       font-weight: 500;
     }
   }
@@ -50,7 +50,7 @@
     }
 
     input::placeholder{
-      font-size: 0.6vw;
+      font-size: 0.7vw;
     }
 
     &-button {
@@ -65,16 +65,188 @@
 
   .verificador{
     height: 0;
-    font-size: 0.6vw;
+    font-size: 0.7vw;
     color: red;
   }
 
   .verificadorGeral{
     height: 0;
-    font-size: 0.7vw;
+    font-size: 0.8vw;
     text-align: center;
     color: red;
 
 
+  }
+}
+
+@media (max-width: 1200px) {
+  .login {
+    &__instructions {
+
+      &-main {
+        font-size: 3vw;
+      }
+
+      &-aux {
+        font-size: 2vw;
+      }
+    }
+  
+    &__area {
+      label {
+        font-size: 1.5vw;
+      }
+  
+      input {
+        width: 27vw;
+        text-indent: 0.8vw;
+      }
+  
+      input::placeholder{
+        font-size: 1vw;
+      }
+  
+      &-button {
+        font-size: 1.5vw;
+      }
+    }
+  
+    .verificador{
+      font-size: 1vw;
+    }
+  
+    .verificadorGeral{
+      font-size: 1vw;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .login {
+    &__instructions {
+
+      &-main {
+        font-size: 3.5vw;
+      }
+
+      &-aux {
+        font-size: 2.5vw;
+      }
+    }
+  
+    &__area {
+      label {
+        font-size: 1.7vw;
+      }
+  
+      input {
+        width: 32vw;
+        text-indent: 0.8vw;
+      }
+  
+      input::placeholder{
+        font-size: 1.3vw;
+      }
+  
+      &-button {
+        font-size: 2.5vw;
+        width: 26vw;
+      }
+    }
+  
+    .verificador{
+      font-size: 1.5vw;
+    }
+  
+    .verificadorGeral{
+      font-size: 1.5vw;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .login {
+    &__instructions {
+
+      &-main {
+        font-size: 4vw;
+      }
+
+      &-aux {
+        font-size: 2.8vw;
+      }
+    }
+  
+    &__area {
+      label {
+        font-size: 2.5vw;
+      }
+  
+      input {
+        width: 40vw;
+        text-indent: 1vw;
+      }
+  
+      input::placeholder{
+        font-size: 2vw;
+      }
+  
+      &-button {
+        font-size: 3.5vw;
+        width: 32vw;
+      }
+    }
+  
+    .verificador{
+      font-size: 2vw;
+    }
+  
+    .verificadorGeral{
+      font-size: 2vw;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .login {
+    &__instructions {
+      margin: auto 4px;
+
+      &-main {
+        font-size: 5vw;
+      }
+
+      &-aux {
+        font-size: 3.5vw;
+      }
+    }
+  
+    &__area {
+      label {
+        font-size: 3.5vw;
+      }
+  
+      input {
+        width: 65vw;
+        text-indent: 2vw;
+      }
+  
+      input::placeholder{
+        font-size: 3vw;
+      }
+  
+      &-button {
+        font-size: 4.5vw;
+        width: 42vw;
+      }
+    }
+  
+    .verificador{
+      font-size: 3vw;
+    }
+  
+    .verificadorGeral{
+      font-size: 3vw;
+    }
   }
 }

@@ -33,11 +33,11 @@
 
     input{
         padding-left: 4vw;
-        font-size: 1.5vw;
+        font-size: 1.7vw;
     }
 
     input::placeholder{
-        font-size: 1vw;
+        font-size: 1.5vw;
     }
     }
 }
@@ -73,5 +73,34 @@
     input::placeholder{
         font-size: 2vw;
     }
+    }
+}
+
+@media (max-width: 450px){
+    .searchbar{
+        &__icon{
+            width: 4vw;
+        }
+
+    input{
+        width: 55vw;
+        padding-left: 8vw;
+        font-size: 3vw;
+    }
+
+    input::placeholder{
+        font-size: 2.5vw;
+    }
+    }
+}
+
+@media (max-width: 400px){
+    .searchbar{
+        input{
+            width: 60vw;
+        }
+        input::placeholder{
+            font-size: 3vw;
+            }
     }
 }

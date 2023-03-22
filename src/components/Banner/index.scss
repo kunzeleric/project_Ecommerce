@@ -42,3 +42,24 @@
     }
   }
 }
+
+@media (max-width: 900px){
+  .carrosel {
+  
+    .container-banner {
+      position: relative;
+      animation: slide 10s infinite;
+      display: flex;
+      height: 25vh;
+    }
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-500%);
+    }
+  }
+}

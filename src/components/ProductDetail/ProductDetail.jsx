@@ -1,6 +1,5 @@
 import './index.scss';
 import cartButton from '../../assets/cart-button.png';
-import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import ModalProduct from '../ModalProduct/ModalProduct';
 
@@ -11,7 +10,7 @@ const ProductDetail = ({data}) => {
     <div className="product-detail">
       <div className="left">
         <div className="left__top">
-        <img className="left__top-logo" src={data.imgPathDetail} alt={data.title} />
+        <img className="left__top-logo" src={data.imgPathDetail } alt={data.title} />
         <p className="left__top-title">{data.title}</p>
         </div>
         <div className="left__bottom">

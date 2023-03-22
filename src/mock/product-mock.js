@@ -2,7 +2,7 @@ export const PRODUCTS_MOCK = [
     {
         id: 1,
         imgPath: "product-1.jpg",
-        imgPathDetail: "../../../public/product-1.jpg",
+        imgPathDetail: "../../../product-1.jpg",
         title: "Microsoft Xbox Series X | Preto",
         description: "O console da Microsoft mais poderoso do momento!",
         price: "R$ 2.500,00",
@@ -11,7 +11,7 @@ export const PRODUCTS_MOCK = [
     {
         id: 2,
         imgPath: "product-2.jpg",
-        imgPathDetail: "../../../public/product-2.jpg",
+        imgPathDetail: "../../../product-2.jpg",
         title: "Microsoft Xbox Series S | Branco",
         description: "O console da Microsoft mais poderoso do momento!",
         price: "R$ 2.200,00",
@@ -20,7 +20,7 @@ export const PRODUCTS_MOCK = [
     {
         id: 3,
         imgPath: "product-3.jpg",
-        imgPathDetail: "../../../public/product-3.jpg",
+        imgPathDetail: "../../../product-3.jpg",
         title: "Nintendo Switch com Jogo",
         description: "Procura mobilidade? O Switch é perfeito para você!",
         price: "R$ 2.500,00",
@@ -29,7 +29,7 @@ export const PRODUCTS_MOCK = [
     {
         id: 4,
         imgPath: "product-4.jpg",
-        imgPathDetail: "../../../public/product-4.jpg",
+        imgPathDetail: "../../../product-4.jpg",
         title: "Jogo God Of War Playstation",
         description: "Kratos se aventura pelas terras Nórdicas em mais uma missão.",
         price: "R$ 100,00",
@@ -38,7 +38,7 @@ export const PRODUCTS_MOCK = [
     {
         id: 5,
         imgPath: "product-5.jpg",
-        imgPathDetail: "../../../public/product-5.jpg",
+        imgPathDetail: "../../../product-5.jpg",
         title: "Jogo Uncharted: The Nathan Drake Collection",
         description: "A coleção completa com os clássicos jogos de Uncharted!",
         price: "R$ 79,90",
@@ -47,7 +47,7 @@ export const PRODUCTS_MOCK = [
     {
         id: 6,
         imgPath: "product-6.jpg",
-        imgPathDetail: "../../../public/product-6.jpg",
+        imgPathDetail: "../../../product-6.jpg",
         title: "Jogo Gran Turismo Playstation",
         description: "O famigerado Gran Turismo está de volta, com novidades!",
         price: "R$ 99,50",

@@ -1,7 +1,7 @@
 # E-commerce - Group Project TECH G01
 
 A project proposed by DNC to create an online store website based on a figma model.
-The purpose of this project was to practice React along with SASS and JS, and also to promote a teamwork activity by simulating a oroject developing.
+The purpose of this project was to practice React along with SASS and JS, and also to promote the growth of teamworking.
 
 
 ## Set Up

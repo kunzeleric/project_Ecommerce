@@ -2,34 +2,21 @@
 @use "../../sass/mixins" as *;
 
 .home {
-    background-color: $black;
+  background-color: $black;
 
   &__product {
-    padding: 5vh 0;
     display: grid;
-    justify-content: center;
-    grid-template-columns: 20vw 20vw 20vw;
-    grid-template-rows: none;
-    gap: 5em;
-
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-around;
+    padding: 5em 1em;
+    grid-gap: 2em;
   }
 }
 
-@media (max-width: 900px) {
-  .home__product{
-      grid-template-columns: auto auto;
-  }
-}
-
-@media (max-width: 700px) {
-  .home__product{
-      grid-template-columns: auto auto;
-  }
-}
-
-
-@media (max-width: 500px) {
-  .home__product{
-      grid-template-columns: auto;
+@media (max-width: 1300px) {
+  .home {
+    &__product {
+      grid-template-columns: repeat(2, auto);
+    }
   }
 }

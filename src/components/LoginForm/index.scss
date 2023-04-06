@@ -27,31 +27,36 @@
   &__area {
     display: flex;
     flex-direction: column;
-
-    &-name {
-      display: flex;
-      flex-direction: column;
+    
+    &-field{
+      position: relative;
       padding-bottom: 2em;
     }
 
-    &-password {
-      display: flex;
-      flex-direction: column;
-      padding-bottom: 4em;
-    }
+    &-fieldInput {
+      position: relative;
 
-    label {
-      padding-bottom: 0.5em;
-    }
 
-    input {
-      @include input-bar;
-      text-indent: 0.5vw;
-    }
+      label {
+        position: absolute;
+        top: 1.5rem;
+        left: 1rem;
+        transition: 0.3s;
+        pointer-events: none;
+      }
 
-    input::placeholder{
-      font-size: 0.7vw;
-    }
+      input {
+        @include input-bar;
+        text-indent: 0.5vw;
+      }
+  
+      input:focus + label, input:not(:placeholder-shown)
+      + label {
+        top: -1rem;
+        background: #fff;
+      }
+  }
+
 
     &-button {
       @include blue-generic-button;
@@ -64,189 +69,22 @@
   }
 
   .verificador{
+    display: none;
     height: 0;
-    font-size: 0.7vw;
+    font-size: 1rem;
     color: red;
   }
 
   .verificadorGeral{
+    display: none;
     height: 0;
-    font-size: 0.8vw;
+    font-size: 1.2rem;
+    margin-top: 1em;
     text-align: center;
     color: red;
-
-
   }
 }
 
 @media (max-width: 1200px) {
-  .login {
-    &__instructions {
 
-      &-main {
-        font-size: 3vw;
-      }
-
-      &-aux {
-        font-size: 2vw;
-      }
-    }
-  
-    &__area {
-      label {
-        font-size: 1.5vw;
-      }
-  
-      input {
-        width: 27vw;
-        text-indent: 0.8vw;
-      }
-  
-      input::placeholder{
-        font-size: 1vw;
-      }
-  
-      &-button {
-        font-size: 1.5vw;
-      }
-    }
-  
-    .verificador{
-      font-size: 1vw;
-    }
-  
-    .verificadorGeral{
-      font-size: 1vw;
-    }
-  }
-}
-
-@media (max-width: 900px) {
-  .login {
-    &__instructions {
-
-      &-main {
-        font-size: 3.5vw;
-      }
-
-      &-aux {
-        font-size: 2.5vw;
-      }
-    }
-  
-    &__area {
-      label {
-        font-size: 1.7vw;
-      }
-  
-      input {
-        width: 32vw;
-        text-indent: 0.8vw;
-      }
-  
-      input::placeholder{
-        font-size: 1.3vw;
-      }
-  
-      &-button {
-        font-size: 2.5vw;
-        width: 26vw;
-      }
-    }
-  
-    .verificador{
-      font-size: 1.5vw;
-    }
-  
-    .verificadorGeral{
-      font-size: 1.5vw;
-    }
-  }
-}
-
-@media (max-width: 700px) {
-  .login {
-    &__instructions {
-
-      &-main {
-        font-size: 4vw;
-      }
-
-      &-aux {
-        font-size: 2.8vw;
-      }
-    }
-  
-    &__area {
-      label {
-        font-size: 2.5vw;
-      }
-  
-      input {
-        width: 40vw;
-        text-indent: 1vw;
-      }
-  
-      input::placeholder{
-        font-size: 2vw;
-      }
-  
-      &-button {
-        font-size: 3.5vw;
-        width: 32vw;
-      }
-    }
-  
-    .verificador{
-      font-size: 2vw;
-    }
-  
-    .verificadorGeral{
-      font-size: 2vw;
-    }
-  }
-}
-
-@media (max-width: 450px) {
-  .login {
-    &__instructions {
-      margin: auto 4px;
-
-      &-main {
-        font-size: 5vw;
-      }
-
-      &-aux {
-        font-size: 3.5vw;
-      }
-    }
-  
-    &__area {
-      label {
-        font-size: 3.5vw;
-      }
-  
-      input {
-        width: 65vw;
-        text-indent: 2vw;
-      }
-  
-      input::placeholder{
-        font-size: 3vw;
-      }
-  
-      &-button {
-        font-size: 4.5vw;
-        width: 42vw;
-      }
-    }
-  
-    .verificador{
-      font-size: 3vw;
-    }
-  
-    .verificadorGeral{
-      font-size: 3vw;
-    }
-  }
 }

@@ -39,12 +39,6 @@
   cursor: pointer;
 }
 
-@mixin card-product {
-  border: 2px solid #b7b7b7;
-  border-radius: $global-radius;
-  font-size: 1vw;
-}
-
 @mixin card-product-button {
   width: 9vw;
   height: 4vh;

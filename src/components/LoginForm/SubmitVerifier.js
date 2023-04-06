@@ -10,6 +10,8 @@ const SubmitVerifier = (event) => {
         if (element.value.length === 0) {
             verificador[index].innerHTML = "*Campo Obrigatório*";
             verificadorGeral.innerHTML = "Campos obrigatórios não preenchidos!";
+            verificador[index].style.display = 'block';
+            verificadorGeral.style.display = 'block';
             check = false;
         }
     })
@@ -22,6 +24,5 @@ const SubmitVerifier = (event) => {
         verificadorGeral.innerHTML = "Campos obrigatórios não preenchidos!";
     }
 }
-
 
 export default SubmitVerifier

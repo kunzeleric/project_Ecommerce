@@ -7,16 +7,16 @@ import "./index.scss";
 const Home = ({ data }) => {
   return (
     <>
-    <div className="home">
-      <HeaderDetailed />
-      <Banner />
-      <div className="home__product">
-        {data.map((product) => (
-          <ProductCard data={product} key={product.id} />
-        ))}
+      <div className="home">
+        <HeaderDetailed />
+        <Banner />
+        <div className="home__product">
+          {data.map((product) => (
+            <ProductCard data={product} key={product.id} />
+          ))}
+        </div>
+        <Footer />
       </div>
-      <Footer/>
-    </div>
     </>
   );
 };

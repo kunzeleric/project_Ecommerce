@@ -26,45 +26,13 @@ footer{
 @media (max-width: 1200px){
     footer{
         img{
-            width: 12vw;
+
         }
     
         p{
-            font-size: 1.2vw;
+
         }
     
     }
 }
 
-@media (max-width: 900px){
-    footer{
-        img{
-            width: 14vw;
-        }
-    
-        p{
-            font-size: 1.4vw;
-        }
-    
-    }
-}
-
-@media (max-width: 700px){
-    footer{
-        p{
-            font-size: 2vw;
-            width: 100%;
-        }
-    
-    }
-}
-
-@media (max-width: 450px){
-    footer{
-        p{
-            font-size: 3vw;
-            width: 100%;
-        }
-    
-    }
-}

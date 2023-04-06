@@ -2,119 +2,79 @@
 @use "../../sass/mixins" as *;
 
 .product-card{
-    @include card-product;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     gap: 2em;
-    background-color: #fff;
+    background-color: transparent;
+    width: 400px;
+    height: 500px;
+    perspective: 1000px;
 
-    &__img{
-        border-top-left-radius: $global-radius;
-        border-top-right-radius: $global-radius;
-        height: 70%;
-        width: 80%;
+    &-flip{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    border-radius: $global-radius;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 2px solid #b7b7b7;
     }
 
-    &__title{
-        font-size: 0.8vw;
+    &__img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: #fff;
+    border-radius: $global-radius;
+
+
+        img{
+            width: 90%;
+            height: 90%;
+            position: relative;
+            top: 1.5rem;
+            left: 0.2rem;
+            border-radius: 10px;
+        }
+    }
+
+    &__details{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+    background-color: #fff;
+
+    &-title{
+        font-size: 1.5rem;
+        font-weight: 600;
         text-align: center;
     }
 
-    &__button{
+    &-button{
         @include card-product-button;
         margin-bottom: 1em;
 
         a{
             color: #fff;
+            }
         }
     }
+}
 
+.product-card:hover .product-card-flip {
+    transform: rotateY(180deg);
 }
 
 @media (max-width: 1200px) {
-    .product-card{
-        width: 24vw;
 
-        &__title{
-            font-size: 1.4vw;
-            height: 2vh;
-        }
-
-        &__button{
-            font-size: 1.3vw;
-        }
-    
-    }
-}
-
-@media (max-width: 900px) {
-    .product-card{
-        width: 32vw;
-
-        &__title{
-            font-size: 1.6vw;
-            text-align: center;
-            height: 2vh;
-        }
-
-        &__button{
-            font-size: 1.5vw;
-            width: 12vw;
-        }
-    
-    }
-}
-
-@media (max-width: 700px) {
-    .product-card{
-        width: 37vw;
-
-        &__title{
-            font-size: 2vw;
-            height: 2.5vh;
-        }
-
-        &__button{
-            font-size: 2.2vw;
-            width: 16vw;
-            height: 4vh;
-        }
-    
-    }
-}
-
-@media (max-width: 450px) {
-    .product-card{
-        width: 60vw;
-
-        &__title{
-            font-size: 3.4vw;
-
-            height: 3vh;
-        }
-
-        &__button{
-            font-size: 3.7vw;
-            width: 22vw;
-        }
-    
-    }
-}
-
-@media (max-width: 400px) {
-    .product-card{
-        width: 63vw;
-
-        &__title{
-            font-size: 3.5vw;
-            height: 3.2vh;
-        }
-
-        &__button{
-            font-size: 4vw;
-            width: 24vw;
-        }
-    
-    }
 }

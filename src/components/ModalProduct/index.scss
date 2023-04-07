@@ -55,85 +55,81 @@
 
   .container__main {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
-    gap: 4em;
+    
 
     &-left {
-      height: 60%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-right: 1vw;
+      text-align: center;
 
       .product-card-info {
         text-align: center;
-        height: auto;
         border-radius: 8px;
         margin-bottom: 2em;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        p {
-          margin: 1em;
-        }
-
-        img {
-          border-radius: 8px;
+        max-width: 300px;
+        
+        img{
+          max-width: 100%;
         }
       }
+      
     }
 
     &-right {
       height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 0 1vw;
 
       .container__info {
         display: flex;
         flex-direction: column;
-        gap: 1vw;
+        gap: 1em;
         text-align: left;
 
         &-title {
-          margin: 0;
-          font-size: 2em;
-          padding-bottom: 0.5vw;
+          font-size: 1.3em;
+          padding-bottom: 0.3em;
           border-bottom: 3px solid $blue;
         }
       }
 
       h3 {
-        font-size: 1.7vw;
+        font-size: 1.5rem;
         color: $blue;
       }
 
       h2 {
-        font-size: 2vw;
-      }
-
-      &__detail-color {
-        font-size: 1vw;
-        font-weight: bold;
+        font-size: 2em;
       }
 
       .container__product-buttons {
         display: flex;
         flex-direction: column;
-        row-gap: 1vw;
+        row-gap: 1em;
+        width: 100%;
+
 
         .continuar {
           @include blue-generic-button;
-          height: 6vh;
+          width: 100%;
+          height: 50px;
+          font-size: 1em;
+          padding: 0 0.5em;
         }
 
         .finalizar {
           @include grey-generic-button;
-          height: 6vh;
+          width: 100%;
+          height: 50px;
+          font-size: 1em;
+          padding: 0 0.5em;
         }
 
         a {
@@ -144,51 +140,98 @@
   }
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 800px) {
   .modal {
+    height: 120vh;
+  
+    .container {
+      width: 80%;
+      height: 75%;
+    }
+  
+    /* Estilizando Card e Sessão*/
+  
     .container__main {
-      gap: 6vw;
-
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 100%;
+      gap: 1em;
+      padding: 0 1em;
       &-left {
-        padding: 0;
-        height: auto;
+        flex-direction: column;
 
-        .product-card-info{
-          max-width: 90%;
-          height: auto;
-
-          img{
-            width: 100%;
-
+        .product-card-info {
+          margin-bottom: 0.5em;
         }
+        
       }
-      }
-
+  
       &-right {
+        height: auto;
+        
         .container__info {
-          &-title {
-            font-size: 1.5vw;
+          display: flex;
+          flex-direction: column;
+          gap: 0.5em;
+        }
+  
+        h2 {
+          font-size: 1.5em;
+        }
+  
+        .container__product-buttons {
+          margin-top: 1em;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .modal {
+    height: 118vh;
+
+    .container {
+      width: 90%;
+      height: 75%;
+    }
+  
+    /* Estilizando Card e Sessão*/
+  
+    .container__main {
+      justify-content: center;
+      &-left {
+
+        .product-card-info {
+          max-width: 250px;
+        }
+        
+      }
+  
+      &-right {
+        height: auto;
+        
+        .container__info {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5em;
+
+          
+          &-title{
+            font-size: 1rem;
           }
 
-          h3 {
-            font-size: 2.5vw;
-          }
-
-          h2 {
-            font-size: 2.3vw;
-          }
-
-          .right__detail-color {
-            font-size: 1.2vw;
+          .right__detail-color{
+            font-size: 1rem;
           }
         }
-
+  
+        h2 {
+          font-size: 1.3em;
+        }
+  
         .container__product-buttons {
-          .continuar {
-          }
-
-          .finalizar {
-          }
+          margin-top: 1em;
         }
       }
     }

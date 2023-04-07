@@ -28,15 +28,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    &-field{
+
+    &-field {
       position: relative;
       padding-bottom: 3rem;
     }
 
     &-fieldInput {
       position: relative;
-
 
       label {
         position: absolute;
@@ -52,14 +51,13 @@
         height: 65px;
         text-indent: 0.5vw;
       }
-  
-      input:focus + label, input:not(:placeholder-shown)
-      + label {
-        top: -1rem;
+
+      input:focus + label,
+      input:not(:placeholder-shown) + label {
+        top: -1.5rem;
         background: #fff;
       }
-  }
-
+    }
 
     &-button {
       @include blue-generic-button;
@@ -74,14 +72,14 @@
     }
   }
 
-  .verificador{
+  .verificador {
     display: none;
     height: 0;
     font-size: 0.8rem;
     color: red;
   }
 
-  .verificadorGeral{
+  .verificadorGeral {
     display: none;
     height: 0;
     font-size: 1rem;
@@ -91,95 +89,29 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 600px) {
   .login {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10em;
-    gap: 5em;
-  
     &__instructions {
-      text-align: center;
-  
       &-main {
-        font-size: 2rem;
-        padding-bottom: 1rem;
-        font-weight: 500;
+        font-size: 1.5rem;
+
       }
-  
+
       &-aux {
-        font-size: 1.5rem;
-        font-weight: 500;
+        font-size: 1rem;
       }
     }
-  
+
     &__area {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      
-      &-field{
-        position: relative;
-        padding-bottom: 3rem;
-      }
-  
       &-fieldInput {
-        position: relative;
-  
-  
-        label {
-          position: absolute;
-          top: 1.5rem;
-          left: 1rem;
-          transition: 0.3s;
-          pointer-events: none;
-        }
-  
         input {
-          @include input-bar;
-          width: 500px;
-          height: 65px;
+          width: 280px;
           text-indent: 1rem;
-          font-size: 1.2rem;
-        }
-    
-        input:focus + label, input:not(:placeholder-shown)
-        + label {
-          top: -1.5rem;
-          background: #fff;
-        }
-    }
-  
-  
-      &-button {
-        @include blue-generic-button;
-        width: 500px;
-        height: 65px;
-        font-size: 1.5rem;
-        align-self: center;
-  
-        a {
-          color: #fff;
         }
       }
-    }
-  
-    .verificador{
-      display: none;
-      height: 0;
-      font-size: 0.8rem;
-      color: red;
-    }
-  
-    .verificadorGeral{
-      display: none;
-      height: 0;
-      font-size: 1rem;
-      margin-top: 1em;
-      text-align: center;
-      color: red;
+      &-button {
+        width: 280px;
+      }
     }
   }
 }

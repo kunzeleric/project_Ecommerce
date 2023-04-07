@@ -1,7 +1,6 @@
 
 const LoginVerifier = (element) => {
     let verificadorGeral = document.querySelector('.verificadorGeral');
-    let verificador = Array.from(document.querySelectorAll('.verificador'));
 
     if (element.target.value.trim().length === 0) {
         element.target.style.borderColor = "red";

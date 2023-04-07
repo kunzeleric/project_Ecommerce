@@ -41,7 +41,7 @@ const ModalProduct = ({ onClose = () => {}, data }) => {
                 {data.colors.map((color, index) => (
                   <span
                     style={{
-                      padding: "0.8vw",
+                      padding: "1em",
                       backgroundColor: color,
                       borderRadius: "8px",
                       border: "1px solid black",
@@ -53,12 +53,9 @@ const ModalProduct = ({ onClose = () => {}, data }) => {
             </div>
             <div className="container__product-buttons">
               <button className="continuar"><Link to='/home'>Continuar Comprando</Link></button>
-              <button onClick={() => setIsModalVisible(true)} className="finalizar">Finalizar Compra</button>
+              <button onClick={() => { setIsModalVisible(true); }} className="finalizar">Finalizar Compra</button>
             </div>
-            {
-          isModalVisible ? <ModalPayment onClose={() => setIsModalVisible(false)} data={data}/>
-          : null
-        }
+            { isModalVisible ? <ModalPayment onClose={() => setIsModalVisible(false)} data={data}/> : null }
           </div>
         </div>
       </div>

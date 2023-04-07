@@ -5,29 +5,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  gap: 4vw;
+  padding: 0 1em;
   .left {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 10vw;
 
     &__top {
       &-title {
-        font-size: 1.2vw;
-        padding-top: 2vw;
+        font-size: 1rem;
+        padding-top: 2em;
       }
     }
 
     &__bottom {
-      padding-top: 3vw;
+      padding-top: 2em;
 
       &-title {
-        padding-bottom: 1vw;
+        padding-bottom: 0.5em;
       }
 
       &-description {
-        padding-bottom: 1vw;
+        padding-bottom: 0.5em;
         border-bottom: 2px solid $blue;
         font-weight: 500;
       }
@@ -42,7 +42,7 @@
       text-align: center;
       font-weight: normal;
       border-bottom: 3px solid $blue;
-      padding-bottom: 0.5vw;
+      padding-bottom: 0.5rem;
     }
 
     &__detail {
@@ -50,16 +50,16 @@
       flex-direction: column;
       justify-content: space-around;
       height: 40%;
-      padding-top: 2vw;
+      padding-top: 1em;
 
       &-price {
-        font-size: 2vw;
-        padding-bottom: 1vw;
+        font-size: 2rem;
+        padding-bottom: 0.5em;
       }
 
       &-color {
-        font-size: 1.2vw;
-        padding-bottom: 1vw;
+        font-size: 1em;
+        padding-bottom: 0.5rem;
       }
 
       &-colorblock {
@@ -71,59 +71,76 @@
         }
       }
     }
+
     &__button {
       @include blue-generic-button;
+      width: 300px;
+      height: 65px;
       display: block;
-      margin-top: 7vw;
+      font-size: 1.2rem;
+      margin-top: 5em;
       align-self: center;
 
       img {
-        padding-right: 0.5vw;
+        padding-right: 0.5em;
       }
     }
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 700px) {
   .product-detail {
+    flex-direction: column;
+
     .left {
-      margin-left: 1vw;
+      align-items: center;
 
       &__top {
         &-title {
-          font-size: 1.5vw;
+          font-size: 1.2rem;
+        }
+      }
+
+      &__bottom {
+
+        &-title {
+          padding-bottom: 0.5em;
+        }
+
+        &-description {
+          padding: 0.5em;
+          border: 2px solid $blue;
         }
       }
     }
 
     .right {
-      margin-right: 3vw;
+      align-items: center;
 
       &__title {
-        font-size: 2.5vw;
+        font-size: 1.3rem;
       }
 
       &__detail {
+        align-items: center;
+        height: auto;
+        padding-top: 1em;
+
         &-price {
-          font-size: 2.5vw;
+          font-size: 2rem;
         }
 
         &-color {
-          font-size: 1.6vw;
+          font-size: 1.2em;
         }
 
-        &-colorblock {
-          span {
-            padding: 1.5vw !important;
-          }
-        }
       }
 
       &__button {
-        width: 30vw;
-        font-size: 1.5vw;
+        width: 250px;
+        font-size: 1rem;
+        margin: 1em 0;
       }
     }
   }
 }
-

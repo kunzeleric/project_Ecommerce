@@ -1,21 +1,20 @@
 @use "../../sass/variables" as *;
 @use "../../sass/mixins" as *;
 
-.modal {
+.modal-payment {
   width: 100%;
   height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 10;
-  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
 
   .container {
     background-color: #fff;
-    width: 65%;
+    width: 70%;
     height: 70%;
     border-radius: 2em;
   }
@@ -63,7 +62,7 @@
 
     h1{
       color: $blue;
-      margin-bottom: 2vw;
+      margin-bottom: 1em;
     }
 
     &-form{
@@ -76,21 +75,101 @@
 
       input{
         @include input-bar;
-        text-indent: 0.5vw;
-        margin-bottom: 1vw;
+        width: 350px;
+        height: 50px;
+        text-indent: 0.5em;
+        margin-bottom: 1em;
       }
 
       input::placeholder{
-        font-size: 0.7vw;
+        font-size: 1em;
       }
     }
     
     &-button {
       @include blue-generic-button;
+      font-size: 1.2rem;
       align-self: center;
-      margin-top: 2vw;
+      width: 350px;
+      height: 50px;
+      margin-top: 1em;
       a {
         color: #fff;
       }
     }
   }
+
+  @media (max-width: 800px){
+  .modal-payment {
+    height: 120vh;
+    
+  .container {
+    width: 80%;
+    height: 75%;
+  }
+}
+
+  /* Estilizando Card e Sessão*/
+
+  .container__payment {
+    height: 100%;
+    justify-content: space-evenly;
+
+    h1{
+      margin: 0;
+    }
+
+    &-form{
+      label{
+        padding-bottom: 0.5em;
+      }
+
+      input{
+        width: 60vw;
+      }
+    }
+    
+    &-button {
+      width: 60vw;
+      margin: 0;
+    }
+  }
+  }
+
+  @media (max-width: 450px){
+    .modal-payment {
+      height: 118vh;
+      
+    .container {
+      width: 90%;
+      height: 75%;
+    }
+  }
+  
+    /* Estilizando Card e Sessão*/
+  
+    .container__payment {
+      height: 100%;
+      justify-content: space-evenly;
+  
+      h1{
+        margin: 0;
+      }
+  
+      &-form{
+        label{
+          padding-bottom: 0.5em;
+        }
+  
+        input{
+          width: 70vw;
+          font-size: 0.8rem;
+        }
+      }
+      
+      &-button {
+        width: 70vw;
+        margin: 0;
+      }
+    }
+    }

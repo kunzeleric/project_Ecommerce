@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ModalPayment = ({ onClose = () => {}, data }) => {
   return (
-    <div className="modal">
+    <div className="modal-payment">
       <div className="container">
         <button onClick={onClose} className="close"></button>
         <div className="container__payment">

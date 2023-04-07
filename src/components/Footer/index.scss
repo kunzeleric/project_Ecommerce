@@ -5,6 +5,7 @@ footer{
     background-color: $blue;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 1.2vw 4vw;
 
     img{
@@ -13,26 +14,45 @@ footer{
     }
 
     p{
-        font-size: 1vw;
+        font-size: 1.3rem;
         color: #fff;
         padding-left: 3vw;
         padding-top: 1em;
         text-align: left;
         width: 80%;
     }
-
 }
 
-@media (max-width: 1200px){
+@media (max-width: 900px){
     footer{
-        img{
-
-        }
-    
+        padding: 1em;
         p{
-
+            font-size: 1rem;
+            padding: 0;
         }
-    
     }
 }
+
+@media (max-width: 600px){
+    footer{
+        justify-content: space-around;
+        p{
+            font-size: 90%;
+        }
+    }
+}
+
+@media (max-width: 450px){
+    footer{
+        display: block;
+        img{
+            display: none;
+        }
+        p{
+            font-size: 80%;
+            width: auto;
+        }
+    }
+}
+
 

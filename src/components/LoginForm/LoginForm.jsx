@@ -20,15 +20,17 @@ const LoginForm = () => {
           <div className="login__area-fieldInput">
             <input type="text" placeholder=" " onKeyUp={LoginVerifier} />
             <label htmlFor="">Nome do usuário ou CPF</label>
+            <p className="verificador" id="name"></p>
           </div>
-          <p className="verificador">*Campo Obrigatório*</p>
+
         </div>
         <div className="login__area-field">
           <div className="login__area-fieldInput">
-            <input type="text" placeholder=" " onKeyUp={LoginVerifier} />
+            <input type="password" placeholder=" " onKeyUp={LoginVerifier} />
             <label htmlFor="">Senha</label>
+            <p className="verificador" id="password"></p>
           </div>
-          <p className="verificador">*Campo Obrigatório*</p>
+
         </div>
         <button type="submit" className="login__area-button">
           <Link to="/home">Entrar</Link>

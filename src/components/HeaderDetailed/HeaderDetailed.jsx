@@ -3,6 +3,7 @@ import Cart from '../../assets/cart-logo.png';
 import SearchBar from '../SearchBar/SearchBar';
 import './index.scss';
 import { Link } from 'react-router-dom';
+import { clickMenu } from './ClickMenu';
 
 
 const HeaderDetailed = () => {
@@ -14,6 +15,7 @@ const HeaderDetailed = () => {
         <SearchBar/>
         <img className="headerdetail__top-cart" src={Cart} alt="Cart Shopping" />
       </div>
+      <span className="material-symbols-outlined" onClick={clickMenu}>menu</span>
       <div className="headerdetail__bottom">
         <nav className="headerdetail__bottom-nav">
           <ul>

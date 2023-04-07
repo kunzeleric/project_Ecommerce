@@ -7,9 +7,9 @@
   &__product {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 5em 1em;
-    grid-gap: 2em;
+    grid-gap: 3vw;
   }
 }
 
@@ -17,6 +17,15 @@
   .home {
     &__product {
       grid-template-columns: repeat(2, auto);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .home {
+    &__product {
+      padding: 2em 0;
+      grid-template-columns: repeat(1, auto);
     }
   }
 }

@@ -4,7 +4,7 @@
 .modal {
   width: 100%;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
@@ -15,8 +15,9 @@
 
   .container {
     background-color: #fff;
-    width: 70%;
-    height: 70%;
+    max-width: 90%;
+    max-height: auto;
+    padding: 4em;
     border-radius: 2em;
   }
 
@@ -26,9 +27,9 @@
     outline: none;
     width: 32px;
     height: 32px;
-    right: calc(-100% + 64px);
+    right: calc(-100%);
     cursor: pointer;
-    top: 16px;
+    top: 0;
     display: flex;
     position: relative;
     align-items: center;
@@ -55,10 +56,10 @@
 
   .container__main {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 100%;
-    
+    gap: 4em;
 
     &-left {
       display: flex;
@@ -85,12 +86,12 @@
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
-      padding: 0 1vw;
 
+      gap: 2em;
       .container__info {
         display: flex;
         flex-direction: column;
-        gap: 1em;
+        gap: 0.5em;
         text-align: left;
 
         &-title {
@@ -142,11 +143,8 @@
 
 @media (max-width: 800px) {
   .modal {
-    height: 120vh;
-  
     .container {
-      width: 80%;
-      height: 75%;
+      padding: 2em;
     }
   
     /* Estilizando Card e Sessão*/
@@ -189,12 +187,6 @@
 
 @media (max-width: 450px) {
   .modal {
-    height: 118vh;
-
-    .container {
-      width: 90%;
-      height: 75%;
-    }
   
     /* Estilizando Card e Sessão*/
   

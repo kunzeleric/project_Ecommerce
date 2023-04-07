@@ -1,8 +1,13 @@
 
 export const clickMenu = () => {
     const menu = document.querySelector('.headerdetail__bottom');
-    if(menu.style.display == 'block'){
-        menu.style.display = 'none';
+    if(menu.style.opacity == 1){
+        menu.style.opacity = 0;
+        menu.style.height = 0;
+        menu.style.overflow = 'hidden';
     }
-    else menu.style.display = 'block';
+    else {
+        menu.style.opacity = 1;
+        menu.style.height = 'auto';
+    };
 }

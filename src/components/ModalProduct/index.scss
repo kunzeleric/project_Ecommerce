@@ -20,7 +20,7 @@
     max-height: auto;
     padding: 4em;
     border-radius: 2em;
-  }
+
 
   .close {
     background-color: transparent;
@@ -52,6 +52,7 @@
       transform: rotate(-45deg);
     }
   }
+}
 
   /* Estilizando Card e Sessão*/
 
@@ -246,6 +247,87 @@
           }
         }
       }
+    }
+  }
+}
+
+/*Modal de Pagamento*/
+
+#payment{
+  display: none;
+}
+
+.container__payment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3vw;
+
+  h1 {
+    color: $blue;
+    margin-bottom: 1em;
+  }
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      padding-bottom: 0.3vw;
+    }
+
+    input {
+      @include input-bar;
+      width: 350px;
+      height: 50px;
+      text-indent: 0.5em;
+      margin-bottom: 1em;
+    }
+
+    input::placeholder {
+      font-size: 1em;
+    }
+  }
+
+  &-button {
+    @include blue-generic-button;
+    font-size: 1.2rem;
+    align-self: center;
+    width: 350px;
+    height: 50px;
+    margin-top: 1em;
+    a {
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  /* Estilizando Card e Sessão*/
+
+  .container__payment {
+    height: 100%;
+    justify-content: space-evenly;
+
+    h1 {
+      margin: 0;
+    }
+
+    &-form {
+      label {
+        padding-bottom: 0.5em;
+      }
+
+      input {
+        width: 70vw;
+        font-size: 0.8rem;
+      }
+    }
+
+    &-button {
+      width: 70vw;
+      margin: 0;
     }
   }
 }

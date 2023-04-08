@@ -7,6 +7,7 @@ export const clickMenu = () => {
         menu.style.overflow = 'hidden';
     }
     else {
+        menu.style.transition = 'all 0.8s';
         menu.style.opacity = 1;
         menu.style.height = 'auto';
     };

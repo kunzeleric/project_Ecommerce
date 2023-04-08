@@ -39,12 +39,12 @@
   }
 }
 
-@media (max-width: 500px){
+@media (max-width: 600px){
     .searchbar{
         input{
-            width: 60vw;
-            height: 3.5vh;
-            font-size: 1rem;
+            width: 65vw;
+            height: 4.5vh;
+            font-size: 1.2rem;
         }
 
         input::placeholder{

@@ -42,7 +42,6 @@
   }
 
   &__bottom {
-    transition: all 0.8s ease;
 
     ul {
       display: flex;
@@ -99,9 +98,10 @@
   .headerdetail {
     &__top {
       gap: 1rem;
+      flex-direction: column;
       
       &-logo {
-        width: 18vw;
+        width: 22vw;
       }
 
       &-cart {
@@ -115,6 +115,9 @@
     }
 
     &__bottom{
+      opacity: 0;
+      height: 0;
+      
       ul{
         display: block;
         text-align: center;

@@ -41,7 +41,6 @@ const ModalProduct = ({ onClose = () => {}, data }) => {
                 {data.colors.map((color, index) => (
                   <span
                     style={{
-                      padding: "1em",
                       backgroundColor: color,
                       borderRadius: "8px",
                       border: "1px solid black",

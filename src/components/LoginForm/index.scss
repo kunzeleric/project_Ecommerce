@@ -91,6 +91,8 @@
 
 @media (max-width: 600px) {
   .login {
+    padding-top: 3em;
+    gap: 3em;
     &__instructions {
       &-main {
         font-size: 1.5rem;

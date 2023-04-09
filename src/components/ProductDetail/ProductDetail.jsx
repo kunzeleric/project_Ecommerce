@@ -1,7 +1,7 @@
 import './index.scss';
 import cartButton from '../../assets/cart-button.png';
 import { useState } from 'react';
-import ModalProduct from '../ModalProduct/ModalProduct';
+import Modal from '../Modal/Modal.jsx';
 
 const ProductDetail = ({data}) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -52,7 +52,7 @@ const ProductDetail = ({data}) => {
         Adicionar ao carrinho
         </button>
         {
-          isModalVisible ? <ModalProduct onClose={() => setIsModalVisible(false)} data={data}/>
+          isModalVisible ? <Modal onClose={() => setIsModalVisible(false)} data={data}/>
           : null
         }
       </div>

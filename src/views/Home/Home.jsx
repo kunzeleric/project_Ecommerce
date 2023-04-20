@@ -6,7 +6,6 @@ import "./index.scss";
 
 const Home = ({ data }) => {
   return (
-    <>
       <div className="home">
         <HeaderDetailed />
         <Banner />
@@ -17,7 +16,6 @@ const Home = ({ data }) => {
         </div>
         <Footer />
       </div>
-    </>
   );
 };
 

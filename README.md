@@ -1,34 +1,31 @@
-# E-commerce - Group Project TECH G01
+# E-commerce DNC
 
-A project proposed by DNC to create an online store website based on a figma model.
-The purpose of this project was to practice React along with SASS and JS, and also to promote the growth of teamworking.
+A project proposed by Escola DNC to create a fake online store website based on a figma model.
+The purpose of this project was to practice React along with SASS and JS, basic frontend development.
 
 
-## Set Up
+## Setup
 
-To use the project, install the Vite React library using:
+To use the project, clone this repository to your machine and run the command:
 
 ```bash
-  npm create vite@latest
+  npm install
 ```
-    
-Also, install the React Router library:
-```bash
-  npm install react-router-dom localforage match-sorter sort-by
-```
-To run the scripts, use the code below:
-```bash
-  npm run dev
-```
+
 ## Features
 
 - Full Screen
-- Mobile (work in progress)
 - Modals
 - Routing
 
+## Take Aways
 
-## Autores
+- Frontend development
+- Project structuring (components, views)
+- CSS techniques
+
+
+## Author
 
 - [Eric Kunzel](https://www.github.com/kunzeleric)
 
